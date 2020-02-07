@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header img{
+	width:114.73px;
+	padding:36px;
+}
+
+.wrapper h1{
+    font-size: 60px;
+    font-weight: bold;
+	width:60%;
+	padding:0px 36px 5px 36px;
+}
+
+.wrapper p{
+	padding: 5px 36px 5px 36px;
+	padding-top:5px;
+	font-size: 24px;
+	width:65%;
+	line-height: 29px;
+}
+
+.wrapper img{
+	width: 80%;
+	margin:auto;
+	display: block;
+	padding-bottom: 16px;
+	padding-top: 4px;
+}
+
+#apply{
+	border: none;
+	border-radius: 26px;
+	padding: 20px;
+	width:80%;
+    margin:auto;
+    margin-bottom: 45px;
+    box-shadow: 5px 10px 15px grey;
+}
+
+#apply #header h2{
+	font-size: 40px;
+	font-weight: bold;
+    padding: 20px 5px 10px 5px;
+}
+
+#apply #header p#enter{
+    padding: 0px 20px 0px 5px;
+}
+
+#apply #info{
+	padding-top: 5px;
+}
+
+#apply #inputs{
+    text-align: center;
+}
+
+#apply #inputs input[type=text]{
+	width:100%;
+	padding:15px;
+	background-color: #F4F4F5;
+	border:none;
+	border-radius: 11px;
+	box-sizing: border-box;
+	margin-bottom:10px;
+	resize: vertical;
+	font-size: 16px;
+}
+
+#apply input[type=text]:nth-child(1){
+	margin-top:10px;
+}
+
+#apply input[type=checkbox]{
+	display: inline-block;
+	font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#apply #submit .button{
+	text-align: center;
+}
+
+#apply #submit .button button{
+	width:250px;
+	border:none;
+	border-radius: 11px;
+	background-color: #57EEAB;
+	font-size: 24px;
+	font-weight: bold;
+	padding:15px;
+	margin: 15px 0px 15px 0px;
+}
+
+#apply #submit .button button:hover{
+	background-color: #51FFB2;
+}
+
+#apply #submit p{
+    padding-left: 5px;
+}
+
+footer{
+	text-align: left;
+    background-color: #FFFD8C;
+    padding:22px 37px 30px 37px;
+}
+
+footer h4{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    width:60%;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+footer #calculator{
+    padding-bottom: 30px;
+}
+
+footer #calculator input{
+    margin-bottom: 10px;
+    border:none;
+    border-radius: 11px;
+    padding:10px;
+    font-size: 16px;
+}
+
+footer #calculator input:nth-child(1){
+    width: 12%;
+    margin-right: 10px;
+}
+
+footer #calculator input:nth-child(2){
+    width:74%;
+}
+
+footer #calculator button{
+    width:100%;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #FF8480;
+    border:none;
+    border-radius:11px;
+    padding:10px;
+}
+
+footer #calculator button:hover{
+	background-color: #FE9995;
+}
+
+footer #icons{
+    text-align: center;
+}
+
+footer #icons img{
+    padding: 0px 43px 0px 0px;
+}
+
+footer #icons img:nth-child(4){
+    padding-right: 0px;
+}
+
+@media(min-width:768px){
+    footer #calculator{
+		display: inline;
+	}
+
+	footer #calculator button{
+		width:30%;
+	}
+}
