@@ -1,0 +1,46 @@
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Nav/Header styles */
+header{
+    text-align: center;
+    background-color:#3C3B3A;
+}
+
+header nav a img{
+    width:10%;
+}
+
+header nav{
+    text-decoration: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:#F2F2F2;
+}
+
+header nav ul li:visited,
+header nav ul li:active{
+    font-weight: bold;
+}
+
+/* Banner styles */
+.banner{
+    margin:auto;
+    width:90%;
+}
+.banner .left-banner h1{
+    font-weight: bold;
+    font-size:40px;
+}
+.banner .left-banner button{
+    border-radius: 40px;
+    border:none;
+    background-color: #26A682;
+    color:#F2F2F2;
+    padding:5px 10px 5px 10px;
+}
