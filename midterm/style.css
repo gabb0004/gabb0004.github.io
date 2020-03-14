@@ -110,10 +110,17 @@ header nav ul li:active{
     display: none;
 }
 
-.discover-ac-left img{
+.discover-ac-left{
     position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-height: 200px;
+}
+
+.discover-ac-left img{
     width: 100%;
-    clip: rect(10px, 0px, 10px, 0px);
+    max-height: 200px;
 }
 
 .discover-ac-right h1{
@@ -224,8 +231,17 @@ header nav ul li:active{
     font-weight: bold;
 }
 
+.discover-entertainment-right{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-height: 200px;
+}
+
 .discover-entertainment-right img{
     width:100%;
+    max-height: 200px;
 }
 
 /* Footer Styles */
@@ -688,6 +704,17 @@ footer .to-top a img{
         padding:0px;
     }
 
+    .banner .scroll{
+        display: block;
+        text-align: center;
+        padding-bottom: 43px;
+    }
+
+    .banner .scroll img{
+        transform: rotate(180deg);
+        width: 3%;
+    }
+
     .president{
         display: flex;
         padding-bottom: 40px;
@@ -731,6 +758,16 @@ footer .to-top a img{
         padding-left:40px;
     }
 
+    .newsletter{
+        display: flex;
+        padding-bottom:5px;
+    }
+
+    .newsletter p{
+        font-size: 24px;
+        padding-top: 18px;
+    }
+
     .sponsors{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -746,6 +783,54 @@ footer .to-top a img{
 
     /* Contact Page Styles */
 
-    /* Footer Styles */
-    
+    .form-left{
+        width: 90%;
+    }
+
+    .form-left h1{
+        font-size: 72px;
+    }
+
+    .form-left p{
+        font-size: 24px;
+    }
+
+    .form-right form{
+        margin: 10px 80px 45px 80px
+    }
+
+    .form-right form h1{
+        font-size: 72px;
+        margin-left: 46px;
+    }
+
+    .form-right form label{
+        font-size: 24px;
+        padding-bottom: 20px;
+        margin-left:46px;
+    }
+
+    .form-right form input[type=text], textarea{
+        width:90%;
+    }
+
+    .form-right form button{
+        position: relative;
+        left: 65%;
+        width: 210px;
+    }
+
+    .location .location-left{
+        width: 90%;
+    }   
+}
+
+@media(min-width:1000px){
+    /* Nav/Header Styles */
+
+    /* Home Page Styles */
+
+    /* About Page Styles */
+
+    /* Contact Page Styles */
 }
