@@ -4,18 +4,25 @@
     margin: 0 auto;
 }
 
-/* Nav/Header styles */
+/* HTML STYLES */
+
+html{
+    font-family: Raleway;
+}
+/* TABLET VIEW */
+
+/* Nav/Header Styles*/
 header{
     text-align: center;
     background-color:#3C3B3A;
 }
 
-header nav a img{
-    width:20%;
+header .logo img{
+    width:30%;
 }
 
 header nav{
-    text-decoration: none;
+    list-style: none;
 }
 
 header nav ul li{
@@ -137,6 +144,7 @@ header nav ul li:active{
     color:#F2F2F2;
     padding:10px 20px 10px 20px;
     font-size: 20px;
+    font-weight: bold;
     border:none;
     text-align: right;
 }
@@ -150,6 +158,7 @@ header nav ul li:active{
 .president{
     background-color: #3C3B3A;
     color: #F2F2F2;
+    padding-top: 30px;
 }
 
 .president .president-left img{
@@ -211,12 +220,15 @@ header nav ul li:active{
     padding:10px 20px 10px 20px;
     font-size: 20px;
     border:none;
-    text-align: right;
+    text-align: center;
+    font-weight: bold;
 }
 
 .discover-entertainment-right img{
-    width: 100%;
+    width:100%;
 }
+
+/* Footer Styles */
 
 footer{
     background-color: #3C3B3A;
@@ -226,6 +238,7 @@ footer{
 
 footer .social{
     display: inline-block;
+    margin: auto;
 }
 
 footer .social p{
@@ -240,20 +253,23 @@ footer .social img{
 
 footer .to-top{
     display: inline-block;
-    width:20%;
+    width:47px;
+    position: absolute;
+    right: 0px;
+    padding-top: 25px;
 }
 
 footer .to-top a{
     text-decoration: none;
     color: #F2F2F2;
-    font-size: 14px;
+    font-size: 9px;
 }
 
 footer .to-top a img{
     width:30%;
 }
 
-/* ABOUT PAGE STYLES */
+/* About Page Styles */
 
 .construction-left h1{
     font-weight: bold;
@@ -282,6 +298,7 @@ footer .to-top a img{
     align-items: center;
     justify-content: center;
     display: flex;
+    max-height: 200px;
 }
 
 .about .overlay{
@@ -294,7 +311,7 @@ footer .to-top a img{
 
 .about img{
     width:100%;
-    clip: rect(10px, 0px, 10px, 0px);
+    max-height: 200px;
 }
 
 .about h1{
@@ -318,7 +335,7 @@ footer .to-top a img{
     font-size: 16px;
     font-weight: 300;
     line-height: 30px;
-    padding: 5px 38px 0px 38px;
+    padding: 5px 38px 25px 38px;
 }
 
 .questions p:nth-child(3){
@@ -330,6 +347,7 @@ footer .to-top a img{
     align-items: center;
     justify-content: center;
     display: flex;
+    max-height: 200px;
 }
 
 .services .overlay{
@@ -351,7 +369,7 @@ footer .to-top a img{
 
 .services img{
     width:100%;
-    clip: rect(10px, 0px, 10px, 0px);
+    max-height: 200px;
 }
 
 .break h2{
@@ -406,6 +424,7 @@ footer .to-top a img{
 
 .newsletter{
     background-color: #3C3B3A;
+    padding-bottom: 23px;
 }
 
 .newsletter p{
@@ -416,8 +435,15 @@ footer .to-top a img{
 }
 
 .newsletter button{
-    margin: 10px auto 10px auto;
+    margin: 17px auto 10px auto;
     display: block;
+    background-color: #26A682;
+    border:none;
+    padding: 5px 22px 5px 22px;
+    border-radius: 40px;
+    color: #F2F2F2;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .fitness h2{
@@ -488,7 +514,7 @@ footer .to-top a img{
     padding:44px;
 }
 
-/* CONTACT FORM STYLES */
+/* Contact Page Styles */
 
 .form-left h1{
     font-size: 50px;
@@ -542,6 +568,7 @@ footer .to-top a img{
     font-size: 14px;
     box-sizing: border-box;
     margin-top: 5px;
+    font-family: Raleway;
 }
 
 .form-right ::placeholder{
@@ -592,5 +619,89 @@ footer .to-top a img{
 
 .location-right iframe{
     width:100%;
+    
+}
+
+/* TABLET VIEW */
+
+@media(min-width:768px){
+    /* Nav/Header Styles */
+    header .logo{
+        display: inline-block;
+        width: 30%;
+        margin-left: 0px;
+        margin-right: 300px;
+        margin-top:10px;
+    }
+
+    header nav{
+        display: inline-block;
+    }
+
+    header nav ul{
+        text-align: right;
+        margin-right: 80px;
+        width: 100%;
+        margin-right:0px;
+        vertical-align: center ;
+    }
+
+    header nav ul li{
+        display: inline-block;
+        list-style: none;
+        text-align: left;
+    }
+    /* Home Page Styles */
+    .banner .left-banner h1{
+        font-size: 70px;
+    }
+
+    .banner .left-banner p{
+        font-size: 20px;
+    }
+
+    .banner .left-banner .button button{
+        width:40%;
+        font-size: 40px;
+    }
+
+    .banner .left-banner .icons{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .banner .left-banner .icons figure{
+        padding:0px;
+    }
+
+    .president{
+        display: inline-block;
+    }
+
+    .president .president-left{
+        display: inline-block;
+        margin-left: 82px;
+    }
+
+    .president .president-right{
+        display: inline-block;
+        width:50%;
+        margin-left: 56px;
+        vertical-align: baseline;
+    }
+
+    .president .president-left img{
+        width:175px;
+    }
+
+    .discover-ac-right .button button{
+        width:230px;
+        text-align: center;
+        font-size: 27px;
+    }
+    /* About Page Styles */
+
+    /* Contact Page Styles */
+
+    /* Footer Styles */
     
 }
