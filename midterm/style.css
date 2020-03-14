@@ -514,6 +514,10 @@ footer .to-top a img{
     padding:44px;
 }
 
+.sponsors img:nth-child(2){
+    width: 80%;
+}
+
 /* Contact Page Styles */
 
 .form-left h1{
@@ -626,24 +630,31 @@ footer .to-top a img{
 
 @media(min-width:768px){
     /* Nav/Header Styles */
+    header{
+        padding-bottom: 30px;
+    }
+
     header .logo{
-        display: inline-block;
-        width: 30%;
+        display: flex;
+        width: 20%;
         margin-left: 0px;
         margin-right: 300px;
-        margin-top:10px;
+        margin-bottom: -38px;
+    }
+
+    header .logo img{
+        width:88px;
     }
 
     header nav{
-        display: inline-block;
+        display: flex;
     }
 
     header nav ul{
         text-align: right;
-        margin-right: 80px;
-        width: 100%;
-        margin-right:0px;
-        vertical-align: center ;
+        margin-right: 40px;
+        width: 30%;
+        margin-top: -30px;
     }
 
     header nav ul li{
@@ -652,6 +663,10 @@ footer .to-top a img{
         text-align: left;
     }
     /* Home Page Styles */
+    .banner{
+        width: 90%;
+    }
+
     .banner .left-banner h1{
         font-size: 70px;
     }
@@ -674,23 +689,24 @@ footer .to-top a img{
     }
 
     .president{
-        display: inline-block;
+        display: flex;
+        padding-bottom: 40px;
     }
 
     .president .president-left{
-        display: inline-block;
-        margin-left: 82px;
+        width: 50%;
     }
 
     .president .president-right{
-        display: inline-block;
         width:50%;
-        margin-left: 56px;
-        vertical-align: baseline;
     }
 
     .president .president-left img{
         width:175px;
+    }
+
+    .discover-ac-right{
+        width: 90%;
     }
 
     .discover-ac-right .button button{
@@ -698,7 +714,35 @@ footer .to-top a img{
         text-align: center;
         font-size: 27px;
     }
+
+    .discover-entertainment-left{
+        width: 90%;
+    }
     /* About Page Styles */
+    .construction-left, .construction-right, .questions, .break, .fitness{
+        width: 90%;
+    }
+
+    .friends p, .climbing p{
+        width: 81%;
+    }
+
+    .friends h2, .friends h3, .climbing h2, .climbing h3{
+        padding-left:40px;
+    }
+
+    .sponsors{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .sponsors img:nth-child(2){
+        width: 60%;
+    }
+
+    .sponsors img{
+        width:30%;
+    }
 
     /* Contact Page Styles */
 
