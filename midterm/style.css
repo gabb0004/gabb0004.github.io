@@ -993,7 +993,7 @@ footer .to-top a img{
     .discover-entertainment{
         display: flex;
         width: 90%;
-        padding: 80px 140px 80px 140px;
+        margin: 80px 140px 80px 100px;
     }
 
     .discover-entertainment-left{
