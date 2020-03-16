@@ -89,13 +89,6 @@ header nav ul li:active{
 
 .banner .left-banner .icons figure{
     text-align: center;
-    padding: 0px 0px 30px 60px;
-}
-
-.banner .left-banner .icons figure:nth-child(1),
-.banner .left-banner .icons figure:nth-child(3){
-    padding-left:0px;
-    padding-right:60px;
 }
 
 .banner .right-banner img{
@@ -106,7 +99,7 @@ header nav ul li:active{
     padding-bottom: 60px;
 }
 
-.banner .scroll{
+.scroll{
     display: none;
 }
 
@@ -121,6 +114,7 @@ header nav ul li:active{
 .discover-ac-left img{
     width: 100%;
     max-height: 200px;
+    object-fit: cover;
 }
 
 .discover-ac-right h1{
@@ -242,6 +236,7 @@ header nav ul li:active{
 .discover-entertainment-right img{
     width:100%;
     max-height: 200px;
+    object-fit: cover;
 }
 
 /* Footer Styles */
@@ -328,6 +323,7 @@ footer .to-top a img{
 .about img{
     width:100%;
     max-height: 200px;
+    object-fit: cover;
 }
 
 .about h1{
@@ -386,6 +382,7 @@ footer .to-top a img{
 .services img{
     width:100%;
     max-height: 200px;
+    object-fit: cover;
 }
 
 .break h2{
@@ -409,7 +406,7 @@ footer .to-top a img{
     padding: 5px 38px 25px 38px;
 }
 
-.break img{
+.break-img img, .friends-img img, .fitness-img img, .climbing-img img{
     display: none;
 }
 
@@ -520,17 +517,21 @@ footer .to-top a img{
     font-size: 56px;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 30px;
+    padding: 30px 37px 5px 37px;
 }
 
-.sponsors img{
+.sponsors .sponsors-img img{
     display: block;
     width: 50%;
     margin:auto;
-    padding:44px;
+    padding:30px;
 }
 
-.sponsors img:nth-child(2){
+.sponsors .sponsors-img img:nth-child(4){
+    padding-bottom: 44px;
+}
+
+.sponsors .sponsors-img img:nth-child(1){
     width: 80%;
 }
 
@@ -704,13 +705,18 @@ footer .to-top a img{
         padding:0px;
     }
 
-    .banner .scroll{
+    .banner .left-banner .icons figure:nth-child(1),
+    .banner .left-banner .icons figure:nth-child(3){
+        padding-right:0px;
+    }
+
+    .scroll{
         display: block;
         text-align: center;
         padding-bottom: 43px;
     }
 
-    .banner .scroll img{
+    .scroll img{
         transform: rotate(180deg);
         width: 3%;
     }
@@ -746,16 +752,82 @@ footer .to-top a img{
         width: 90%;
     }
     /* About Page Styles */
-    .construction-left, .construction-right, .questions, .break, .fitness{
-        width: 90%;
+    .break{
+        display: flex;
+        width: 80%;
+        padding: 63px 0px 60px 0px;
     }
 
-    .friends p, .climbing p{
-        width: 81%;
+    .break img{
+        display: initial;
+        object-fit: cover;
+        width:218px;
+        height:374px;
     }
 
-    .friends h2, .friends h3, .climbing h2, .climbing h3{
-        padding-left:40px;
+    .friends{
+        display: flex;
+        padding: 63px 0px 60px 0px;
+        margin: auto;
+    }
+
+    .friends-img{
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        margin-right: 120px;
+    }
+
+    .friends-info{
+        display: inline-block;
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .friends img{
+        display: initial;
+        object-fit: cover;
+        width:218px;
+        height:374px;
+    }
+
+    .fitness{
+        display: flex;
+        width: 80%;
+        padding: 63px 0px 60px 0px;
+    }
+
+    .fitness img{
+        display: initial;
+        object-fit: cover;
+        width:218px;
+        height:374px;
+    }
+
+    .climbing{
+        display: flex;
+        padding: 63px 0px 60px 0px;
+        margin: auto;
+    }
+
+    .climbing-img{
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        margin-right: 120px;
+    }
+
+    .climbing-info{
+        display: inline-block;
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .climbing img{
+        display: initial;
+        object-fit: cover;
+        width:218px;
+        height:374px;
     }
 
     .newsletter{
@@ -773,11 +845,11 @@ footer .to-top a img{
         padding-bottom: 50px;
     }
 
-    .sponsors img:nth-child(2){
+    .sponsors .sponsors-img img:nth-child(2){
         width: 60%;
     }
 
-    .sponsors img{
+    .sponsors .sponsors-img img{
         width:30%;
     }
 
@@ -827,10 +899,271 @@ footer .to-top a img{
 
 @media(min-width:1000px){
     /* Nav/Header Styles */
+    header{
+        padding-bottom: 10px;
+    }
 
+    header .logo img{
+        margin-top: 5px;
+        width: 30%;
+    }
+
+    header nav{
+        margin-top:20px;
+    }
     /* Home Page Styles */
 
+    .banner{
+        display: flex;
+        padding-top: 92px;
+    }
+
+    .banner .left-banner{
+        width:40%;
+        margin-left:0px;
+    }
+
+    .banner .left-banner h1{
+        padding-top: 100px;
+        width: 80%;
+    }
+
+    .banner .left-banner p{
+        width: 80%;
+    }
+
+    .banner .left-banner .button button{
+        display: block;
+        width:50%
+    }
+
+    .banner .right-banner{
+        width: 60%;
+        margin-right:0px;
+    }
+
+    .scroll p{
+        font-size: 16px;
+    }
+
+    .scroll img{
+        width: 2%;
+    }
+
+    .discover-ac{
+        display: flex;
+    }
+
+    .discover-ac-left{
+        width:40%;
+        padding-left: 100px;
+    }
+
+    .discover-ac-right{
+        width: 50%;
+        padding-right: 100px;
+    }
+
+    .president{
+        padding:0px;
+    }
+
+    .president-left{
+        display: flex;
+    }
+
+    .president .president-left img{
+        margin: 38px 100px 38px 100px;
+    }
+
+    .president .president-title{
+        padding-top: 70px;
+        margin:0px;
+    }
+
+    .president .president-right{
+        width: 90%;
+    }
+
+    .president .president-right p{
+        margin-top:60px;
+        margin-right: 139px;
+    }
+
+    .discover-entertainment{
+        display: flex;
+        width: 90%;
+        padding: 80px 140px 80px 140px;
+    }
+
+    .discover-entertainment-left{
+        width: 50%;
+    }
+
+    .discover-entertainment-left p{
+        padding-bottom: 100px;
+        padding-right:39px;
+    }
+
+    .discover-entertainment-right{
+        padding-top:65px;
+        width: 50%;
+        order:2;
+    }
+
+    .discover-entertainment-right img{
+        max-height: 338px;
+    }
     /* About Page Styles */
+    .construction{
+        display: flex;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .construction-left{
+        width: 30%;
+        margin-right: 10px;
+        padding-top: 75px;
+    }
+
+    .construction-right{
+        width: 40%;
+    }
+
+    .questions{
+        display: flex;
+        padding-top: 225px;
+        padding-bottom: 225px;
+    }
+
+    .questions .questions-who{
+        width:25%;
+    }
+
+    .questions .questions-what{
+        width:25%;
+    }
+
+    .questions .questions-where{
+        width:25%;
+    }
+
+    .break .break-img img{
+        width: 813px;
+    }
+
+    .friends .friends-img{
+        margin-left: 0px;
+    }
+
+    .friends .friends-img img{
+        width: 813px;
+    }
+
+    .friends .friends-info{
+        width: 40%;
+        margin-left: 150px;
+    }
+
+    .fitness .fitness-img img{
+        width: 813px;
+    }
+
+    .climbing .climbing-img{
+        margin-left: 0px;
+    }
+
+    .climbing .climbing-img img{
+        width: 813px;
+    }
+
+    .climbing .climbing-info{
+        width: 40%;
+        margin-left: 150px;
+    }
+
+    .sponsors h1{
+        width: 25%;
+        padding-bottom: 76px;
+    }
+
+    .sponsors .sponsors-img{
+        display: flex;
+    }
+
+    .sponsors .sponsors-img img:nth-child(1){
+        width: 435px;
+    }
+
+    .sponsors .sponsors-img img:nth-child(2){
+        width: 202px;
+    }
+
+    .sponsors .sponsors-img img:nth-child(3){
+        width: 220px;
+    }
+
+    .sponsors .sponsors-img img:nth-child(4){
+        width: 152px;
+    }
 
     /* Contact Page Styles */
+
+    .form{
+        display: flex;
+        padding: 162px 140px 40px 140px;
+    }
+
+    .form .form-left{
+        width: 50%;
+    }
+
+    .form .form-right{
+        width: 50%;
+        margin-left: 100px;
+    }
+
+    .form .form-right form{
+        width: 628px;
+        height: 801px;
+    }
+
+    .form .form-right form input[type=text]{
+        padding:20px
+    }
+
+    .form .form-right form #message{
+        height:200px
+    }
+
+    .location{
+        display: flex;
+        padding-top: 125px;
+        padding-bottom: 125px;
+    }
+
+    .location .location-left{
+        width: 50%;
+        margin-right:10px;
+        margin-left: 140px;
+    }
+
+    .location .location-left h1{
+        font-size: 72px;
+    }
+
+    .location .location-left h2{
+        font-size: 40px;
+    }
+
+    .location .location-left p{
+        font-size: 18px;
+    }
+
+    .location .location-right{
+        width: 50%;
+        margin-right:140px;
+    }
+
 }
