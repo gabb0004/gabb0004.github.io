@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="shortcut icon" type="image/png" href="images/bootstrap logo.png">
     <title>Bootstrap This!</title>
   </head>
   <body class="bg-light">
@@ -25,17 +25,144 @@
             </div>
         </div>
     </nav>
-        <div class="jumbotron w-50 mx-auto mt-5 bg-light">
-            <h1 class="display-4 mt-5 d-flex justify-content-center">Welcome to the Bootstrap Fanpage</h1>
-            <img src="images/bootstrap logo.png" alt="bootstrap logo" class="d-block mx-auto my-4" style="width: 20%;">
-            <h2 class="lead d-flex justify-content-center">Your one-stop shop to learn the basics of Bootstrap</h2>
-            <hr class="my-4">
-            <div class="btn-group-vertical d-flex mx-auto">
-                <button class="bg-primary btn-lg btn-block border border-0 rounded p-2 text-light my-2 mx-auto" data-toggle="button">About Bootstrap</button>
-                <button class="bg-primary btn-lg btn-block border border-0 rounded p-2 text-light my-2 mx-auto" data-toggle="button">Starting Out</button>
-                <button class="bg-primary btn-lg btn-block border border-0 rounded p-2 text-light my-2 mx-auto" data-toggle="button">Essential Components</button>
+    <div class="jumbotron w-50 mx-auto mt-5 bg-light">
+        <h1 class="display-4 mt-5 d-flex justify-content-center">Welcome to the Bootstrap Fanpage</h1>
+        <img src="images/bootstrap logo.png" alt="bootstrap logo" class="d-block mx-auto my-4" style="width: 20%;">
+        <h2 class="lead d-flex justify-content-center">Your one-stop shop to learn the basics of Bootstrap</h2>
+        <hr class="my-4">
+        <div class="containter">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="#about" class="bg-primary btn-lg btn-block border border-0 rounded p-2 text-light my-2 mx-auto text-center text-decoration-none">About Bootstrap</a>
             </div>
+            <div class="col-md-4">
+              <a href="#starting-out" class="bg-primary btn-lg btn-block border border-0 rounded p-2 text-light my-2 mx-auto text-center text-decoration-none">Starting Out</a>
+            </div>
+            <div class="col-md-4">
+              <a href="#essential-components" class="bg-primary btn-lg btn-block border border-0 rounded p-2 text-light my-2 mx-auto text-center text-decoration-none">Essential Components</a>
+            </div>
+          </div>
         </div>
+    </div>
+    <div class="about">
+      <hr class="my-4 d-flex mx-auto">
+      <div class="card w-75 mx-auto border-0 bg-light">
+        <div class="card-body mx-auto">
+          <a href="#" id="about"></a>
+          <h2>About Bootstrap</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row my-5 mx-2">
+          <div class="col-md-4 my-3">
+            <h3 class="d-flex justify-content-center">What is Bootstrap?</h3>
+            <p class="d-flex justify-content-center">Bootstrap is an open-source CSS framework intented to be used for mobile-first web developpment. It uses CSS and JavaScript-based templates to make creating different elements easier for the developper.</p>
+            <button class="bg-primary btn-md border-0 rounded p-2 text-light my-2 d-flex mx-auto">Learn More</button>
+          </div>
+          <div class="col-md-4 my-3">
+            <h3 class="d-flex justify-content-center">Who runs Bootstrap?</h3>
+            <p class="d-flex justify-content-center">It was originally created by a developper at Twitter in 2010, but now Bootsrtap has an independant dev team on Gtihub who regularly maintains it.</p>
+          </div>
+          <div class="col-md-4 my-3">
+            <h3 class="d-flex justify-content-center">Why should I use Bootstrap?</h3>
+            <p class="d-flex justify-content-center">Bootsrtap enables the developper to make a responsive webpage as easy and frictionless as possoble. All of your code can be done in HTML with zero CSS or JavaScript, since the dev team at Bootsrtap has done it all for you.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="starting-out">
+        <hr class="my-4 d-flex mx-auto">
+        <div class="card w-75 mx-auto border-0 bg-light">
+          <div class="card-body mx-auto">
+            <a href="#" id="starting-out"></a>
+            <h2>Starting Out</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row my-5">
+            <div class="col my-3 mx-2">
+              <div class="card">
+                <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template" target="_blank"><img src="images/starter template.PNG" class="card-img-top" alt="template"></a>
+                <div class="card-body">
+                  <h4 class="card-title">Starter Template</h4>
+                  <p class="card-text">This starter template will enable you to start coding with Bootstrap. It includes the CSS stylesheet and the JavaScript plugins made by the Bootstrap team.</p>
+                  <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template" class="btn btn-primary" target="_blank">Full Template</a>
+                </div>
+              </div>
+            </div>
+            <div class="col my-3 mx-2">
+              <div class="card">
+                <a href="https://getbootstrap.com/docs/4.3/getting-started/contents/" target="_blank"><img src="images/content.png" class="card-img-top" alt="template"></a>
+                <div class="card-body">
+                  <h4 class="card-title">Content</h4>
+                  <p class="card-text">Discover what Bootstrap has included in their libraries, such as their precompiled code.</p>
+                  <a href="https://getbootstrap.com/docs/4.3/getting-started/contents/" class="btn btn-primary" target="_blank">All Content</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="essential-components">
+          <hr class="my-4 d-flex mx-auto">
+          <div class="card w-75 mx-auto border-0 bg-light">
+            <div class="card-body mx-auto">
+              <a href="#" id="essential-components"></a>
+              <h2>Essential Components</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row my-5 mx-2">
+              <div class="col-md-4 my-3">
+                <h3 class="d-flex justify-content-center">Jumbotron</h3>
+                <p class="my-3">A jumbotron is used to display important content on your website in a large fashion. It's generally used for banners or ads.</p>
+                <div class="jumbotron">
+                  <h2 class="display-4">Hello, world!</h2>
+                  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                  <hr class="my-4">
+                  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                  <a class="btn btn-primary btn-lg" href="https://getbootstrap.com/docs/4.3/components/jumbotron/" role="button">Learn more</a>
+                </div>
+              </div>
+              <div class="col-md-4 my-3">
+                <h3 class="d-flex justify-content-center">Button Group</h3>
+                <p class="my-3">A button group is used to group similar buttons together. This can be done in a horizontal or vertical fashion. It can also include dropdown buttons.</p>
+                <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                  <a href="https://getbootstrap.com/docs/4.3/components/button-group/" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://getbootstrap.com/docs/4.3/components/button-group/" class="btn btn-primary" target="_blank">More</a>
+                  <a href="https://getbootstrap.com/docs/4.3/components/button-group/" class="btn btn-primary" target="_blank">Here</a>
+                </div>
+              </div>
+              <div class="col-md-4 my-3">
+                <h3 class="d-flex justify-content-center">Modal</h3>
+                <p class="my-3">A modal is used to display a warning or notification to the user, either to warn them of somthing they are about to change, to remind them to save their work, or to display a promotion.</p>
+                <button type="button" class="btn btn-primary d-block mx-auto" data-toggle="modal" data-target="#exampleModal">
+                  Here's an example
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal Example</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        This is how a modal would funcion on your site. It is fully customizable, so you can make it fit your site's aesthetic.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a href="https://getbootstrap.com/docs/4.3/components/modal/" class="btn btn-primary" target="_blank">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
         
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
