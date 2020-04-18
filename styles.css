@@ -71,6 +71,7 @@ nav ul li{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50%;;
 }
 
 nav ul li a{
@@ -120,6 +121,13 @@ body .intro .name button a{
 
 body .intro .my-pic{
     height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+body .intro .my-pic img{
+    width: 288%;
+    left: -100px;
 }
 
 footer{
@@ -174,6 +182,12 @@ body p#about{
 }
 
 /* Contact Page */
+
+body .contactInfo p#info,
+body .contactInfo p#resume{
+    width: 72%;
+    margin: auto;
+}
 
 body .contactInfo p#info{
     font-size: 25px;
@@ -289,4 +303,76 @@ button#submit{
 #films a img{
     width: 100%;
     flex-shrink: 0;
+}
+
+#code{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    overflow-x: auto;
+    margin-bottom:50px;
+}
+
+#code img{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@media (min-width:700px){
+    /* Home Page */
+    header img{
+        width: 50%;
+    }
+    body .intro .my-pic img{
+        width: 154.4%;
+        overflow: hidden;
+    }
+    /* About Page */
+    body h1{
+        font-size: 84px;
+    }
+
+    body img#flower{
+        width: 30%;
+        margin-top: 50px;
+    }
+
+    body p#about{
+        font-size: 25px;
+        width: 60%;
+        margin:auto;
+    }
+
+    /* Contact Page */
+    .contactInfo h1{
+        font-size: 60px;
+    }
+
+    body .contactInfo p#info,
+    body .contactInfo p#resume{
+        width: 58%;
+    }
+
+    body .contactInfo .button{
+        padding: 0px;
+        padding-top: 14px;
+    }
+
+    body .contactInfo .button button#resume{
+        width: 50%;
+    }
+
+    form{
+        width: 60%;
+        margin: auto;
+    }
+
+    textarea#message{
+        height: 400px;
+    }
+
+    /* Works Page */
+    #photos, #webDesigns, #films, #code{
+        height: 700px;
+    }
 }
