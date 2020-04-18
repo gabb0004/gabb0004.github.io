@@ -223,6 +223,10 @@ body .contactInfo .button button#resume a{
     font-size: 20px;
 }
 
+body .contactInfo iframe{
+    display: none;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -323,10 +327,20 @@ button#submit{
     header img{
         width: 50%;
     }
+
     body .intro .my-pic img{
         width: 154.4%;
         overflow: hidden;
     }
+    
+    body .intro .name h1{
+        font-size: 38px;
+    }
+    
+    body .intro .name h2{
+        font-size: 28px;
+    }
+
     /* About Page */
     body h1{
         font-size: 84px;
@@ -375,4 +389,73 @@ button#submit{
     #photos, #webDesigns, #films, #code{
         height: 700px;
     }
+}
+
+@media (min-width: 1000px){
+    /* Home Page */
+    header img{
+        width: 30%;
+    }
+
+    body .intro .my-pic img{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    body .intro .name h1{
+        font-size: 80px;
+    }
+    
+    body .intro .name h2{
+        font-size: 45px;
+    }
+
+    body .intro .name button{
+        width: 30%;
+    }
+    
+    body .intro .name button a{
+        font-size: 30px;
+    }
+
+    /* About */
+    body .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 100px;
+    }
+
+    body .title{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    body .right{
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+    body img#flower{
+        width: 48%;
+    }
+
+    body .left{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    /* Contact Page */
+
+    .contactInfo h1{
+        font-size: 84px;
+    }
+
+    
+
+    /* Works Page */
+
+    #photos, #webDesigns, #films, #code{
+        height: 700px;
+        width: 50%;
+        margin:auto;
+    }
+
 }
