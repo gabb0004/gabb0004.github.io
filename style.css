@@ -36,16 +36,13 @@ ul, #fileTree{
 body{
     background-color: #363635;
     color: #F5F5F5;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin: auto;
-    height: 50%;
 }
 
-body h1{
+div.content{
+    margin-top: 200px;
+}
+
+div.content h1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,4 +59,10 @@ a:hover{
 
 html{
     min-height: 100%;
+}
+
+div.readMe{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }

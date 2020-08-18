@@ -1,13 +1,13 @@
-<h1>Project Title</h1>
+<h1>GABB0004 Repository</h1>
 <p>One Paragraph of project description goes here</p>
 
 <h2>Getting Started</h2>
-<p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
+<p>This repository is a collection of the projects that I have done throughout my 2 years in the IMD (Interactive Media Design) program at Algonquin College.</p>
 
 <h2>Built With</h2>
 <p>VS Code</p>
 
-<h2>Authors</h2>
+<h2>Author</h2>
 <p>Chris Gabbour</p>
 
 <h2>Acknowledgments</h2>
