@@ -1,1 +1,16 @@
-<p>This portfolio has challenged me to use everything that I have learned this semester, from specifity all the way to CSS grid and flexbox. It's a very challenging task, but I can comfortably say that I can code any basic website from scratch and have a good final product. I've learned that I overestimated my coding skill from the beginning of this semester. I think that I am good at HTML and CSS, but nowhere good enough to where i can code a final assignment in a day or two. I know now that I have to give myself the time to do the work and that I don't have the necessary skills to do things last minute.<p>
+<h1>Project Title</h1>
+<p>One Paragraph of project description goes here</p>
+
+<h2>Getting Started</h2>
+<p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
+
+<h2>Built With</h2>
+<p>VS Code</p>
+
+<h2>Authors</h2>
+<p>Chris Gabbour</p>
+
+<h2>Acknowledgments</h2>
+<p>Gaëlle Gabbour - my mother
+Alex Gabbour - my brother
+Richard Nguyen - my best friend</p>
