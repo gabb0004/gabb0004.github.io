@@ -9,29 +9,18 @@
 <body>
     <h1>Welcome to my GitHub</h1>
     <ul id="fileTree">
-        <li><span class="caret">Responsive Web 2</span>
+        <li id="parent"><span class="caret">Responsive Web 2</span>
             <ul class="nested">
-                <li><a href="https://gabb0004.github.io/bootstrap%20this/index.html">bootstrap this</a></li>
-                <li><a href="gabb0004.github.io/final/index.html">final</a></li>
-                <li><a href="gabb0004.github.io/landing-page/index.html">landing page</a></li>
-                <li><a href="gabb0004.github.io/midterm/index.html">midterm</a></li>
-                <li><a href="gabb0004.github.io/mtm6201-picture-this-master/index.html">picture this</a></li>
+                <li><a href="https://gabb0004.github.io/bootstrap%20this/index.html" target="_blank">bootstrap this</a></li>
+                <li><a href="https://gabb0004.github.io/final/index.html" target="_blank">final</a></li>
+                <li><a href="https://gabb0004.github.io/landing-page/index.html" target="_blank">landing page</a></li>
+                <li><a href="https://gabb0004.github.io/midterm/index.html" target="_blank">midterm</a></li>
+                <li><a href="https://gabb0004.github.io/mtm6201-picture-this-master/index.html" target="_blank">picture this</a></li>
             </ul>
             
         </li>
-        <li><span class="caret">Javascript (coming soon)</span></li>
+        <li id="parent"><span class="caret">Javascript (coming soon)</span></li>
     </ul>
-
-    <script>
-        var toggler = document.getElementsByClassName("caret");
-        var i;
-
-        for (i=0; i < toggler.length; i++){_
-            toggler[i].addEventListener("click", function(){
-                this.parentElement.querySelector(".nested").classList.toggle("active");
-                this.classList.toggle("caret-down");
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

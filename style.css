@@ -3,8 +3,10 @@ ul, #fileTree{
 }
 
 #fileTree{
-    margin: 0;
+    display: block;
+    margin: auto;
     padding: 0;
+    width: 200px;
 }
 
 .caret{
@@ -14,7 +16,7 @@ ul, #fileTree{
 
 .caret::before{
     content: "\25B6";
-    color: black;
+    color: #E8EBE4;
     display: inline-block;
     margin-right: 6px;
 }
@@ -29,4 +31,31 @@ ul, #fileTree{
 
 .active{
     display: block;
+}
+
+body{
+    background-color: #363635;
+    color: #E8EBE4;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    height: 50%;
+}
+
+body h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #E8EBE4;
+}
+
+html{
+    min-height: 100%;
 }
