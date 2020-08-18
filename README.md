@@ -11,6 +11,6 @@
 <p>Chris Gabbour</p>
 
 <h2>Acknowledgments</h2>
-<p>Gaëlle Gabbour - my mother
-Alex Gabbour - my brother
+<p>Gaëlle Gabbour - my mother</br>
+Alex Gabbour - my brother</br>
 Richard Nguyen - my best friend</p>
